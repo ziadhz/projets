@@ -15,6 +15,7 @@ const PortfolioPage: React.FC = () => {
       "2018-2019 : Baccalauréat section SM mention B, Lycée Hassan 2, Tétouan",
       "2019-2021 : Classe préparatoire aux grandes écoles CPGE MP, CPGE Tétouan"
     ],
+    
     experienceProfessionnelle: "Projet en cours : Déployer Eduroam au sein de l’EMI",
     contact: {
       telephone: "0621601642",
@@ -32,6 +33,7 @@ const PortfolioPage: React.FC = () => {
       { name: "Simulation réseau avec Packet Tracer", description: "Développé des simulations réseau à l'aide de Packet Tracer pour concevoir et mettre en œuvre diverses topologies réseau, dépanner les problèmes réseau et optimiser les performances réseau." }
     ]
   };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-blue-900 to-cyan-900 flex flex-col items-center py-8">
@@ -40,6 +42,7 @@ const PortfolioPage: React.FC = () => {
           <h1 className="text-3xl font-bold">Portfolio</h1>
           <nav>
             <ul className="flex space-x-6">
+              <li><a href ="https://ziadhz.github.io/formulaire/"> Visite Formulaire</a></li>
               <li><a href="#personalInfo" className="hover:text-gray-200">Personal Info</a></li>
               <li><a href="#education" className="hover:text-gray-200">Education</a></li>
               <li><a href="#experience" className="hover:text-gray-200">Experience</a></li>
@@ -67,6 +70,7 @@ const PortfolioPage: React.FC = () => {
             <a href="#" className="text-gray-800 hover:text-gray-600 mx-2"><FaGithub size="1.5em" /></a>
             <a href="#" className="text-blue-400 hover:text-blue-600 mx-2"><FaTwitter size="1.5em" /></a>
           </div>
+          
         </section>
         <section id="hobbies" className="bg-white p-6 shadow-lg rounded-lg mb-6">
           <Hobbies violonDIngres={portfolioData.violonDIngres} />
